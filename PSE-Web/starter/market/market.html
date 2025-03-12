@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../photos/PHARMA_small.png"
+    />
+
+    <title>Online Pharmacy & Health Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        margin-top: 50px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #5ec576;
+        margin-bottom: 30px;
+      }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .product-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+      .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .product-card .product-info {
+        padding: 15px;
+        flex-grow: 1; /* Pushes the button to the bottom */
+        display: flex;
+        flex-direction: column;
+      }
+      .product-card h3 {
+        font-size: 18px;
+        margin: 0 0 10px;
+        color: #4bbb7d;
+      }
+      .product-card p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: auto;
+      }
+      .product-card .price {
+        font-size: 16px;
+        font-weight: 600;
+        color: #28a745;
+        margin-bottom: 10px;
+      }
+      .product-card button {
+        width: 100%;
+        padding: 10px;
+        background-color: #5ec576;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+      }
+      .product-card button:hover {
+        background-color: #4bbb7d;
+      }
+    </style>
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <body>
+    <div class="amazon-header">
+      <div class="amazon-header-left-section">
+        <a href="../pharmacy/Pharmacy.html" class="header-link">
+          <img class="amazon-logo" src="../photos/PHARMA (1).png" />
+        </a>
+      </div>
+
+      <div class="amazon-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+
+        <button class="search-button">
+          <img class="search-icon" src="../photos/search-icon.png" />
+        </button>
+      </div>
+
+      <div class="amazon-header-right-section">
+        <a class="orders-link header-link" href="../orders/orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="../checkout/checkout.html">
+          <img class="cart-icon" src="../photos/cart-icon.png" />
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Online Pharmacy & Health Store</h1>
+      <div class="product-grid">
+        <!-- Product Cards -->
+        <div class="product-card">
+          <img
+            src="../photos/moisturizingCreme.webp"
+            alt="Humeda Moisturizing Creme"
+          />
+          <div class="product-info">
+            <h3>Humeda Rich Moisturizing Creme - 200g</h3>
+            <p>Deeply nourishes and hydrates dry skin.</p>
+            <p class="price">Rs 885.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../photos/sunscreenGel.png" alt="LA Shield Sunscreen" />
+          <div class="product-info">
+            <h3>LA Shield Fisico Matte Sunscreen Gel - 50g</h3>
+            <p>Provides matte finish and sun protection.</p>
+            <p class="price">Rs 1,200.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../photos/GTE.png" alt="GTN Spray" />
+          <div class="product-info">
+            <h3>GTN Spray - 147ml</h3>
+            <p>Effective spray for quick relief.</p>
+            <p class="price">Rs 480.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../photos/melasmaCream.webp" alt="Melover Melasma Cream" />
+          <div class="product-info">
+            <h3>Melover Melasma Cream - 20g</h3>
+            <p>Reduces dark spots and melasma.</p>
+            <p class="price">Rs 960.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="../photos/NourishingHairOil .webp"
+            alt="Mamaearth Hair Oil"
+          />
+          <div class="product-info">
+            <h3>Mamaearth Nourishing Hair Oil for Babies - 200ml</h3>
+            <p>Gentle and nourishing oil for baby hair.</p>
+            <p class="price">Rs 638.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="../photos/FlamingoDiaper.webp"
+            alt="Flamingo Adult Diaper"
+          />
+          <div class="product-info">
+            <h3>Flamingo Adult Diaper (Unisex) - Large</h3>
+            <p>Comfortable and absorbent adult diapers.</p>
+            <p class="price">Rs 630.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../photos/Eylon.webp" alt="Eylon 400 Mg" />
+          <div class="product-info">
+            <h3>Eylon 400 Mg</h3>
+            <p>Effective medication for specific conditions.</p>
+            <p class="price">Rs 65.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../photos/DarkSerum.webp" alt="AXIS-Y Serum" />
+          <div class="product-info">
+            <h3>AXIS-Y Dark Spot Correcting Glow Serum - 50ml</h3>
+            <p>Brightens skin and reduces dark spots.</p>
+            <p class="price">Rs 2,100.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+          <img src="../photos/AconécarGel.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Aconécar Gel (Brinton) - 15g</h3>
+            <p>Advanced gel to reduce acne scars.</p>
+            <p class="price">Rs 1,192.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+          <img src="../photos/inhaler.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Albuterol Sulfate Inhalation Areosol 90 mcg</h3>
+            <p>Albuterol Sulfate 90 mcg eases breathing in asthma and COPD.</p>
+            <p class="price">Rs 999.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card">
+          <img src="../photos/antifungalcream.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Antifungal Cream 2% Miconazole Nitrate</h3>
+            <p>Miconazole 2% treats fungal infections.</p>
+            <p class="price">Rs 550.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card">
+          <img src="../photos/Salbutamol-Inhaler.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Salamol CFC</h3>
+            <p>Salamol CFC treats asthma.</p>
+            <p class="price">Rs 1500.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="product-card">
+          <img src="../photos/microsoftteams.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Savlon Scar Prevention Gel- 50g</h3>
+            <p>Savlon Gel prevents scars..</p>
+            <p class="price">Rs 1,110.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="product-card">
+          <img src="../photos/polycrol.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Anatacide Antigas Gel</h3>
+            <p>
+              Anatacide Antigas Gel relieves gas, bloating, and indigestion.
+            </p>
+            <p class="price">Rs 550.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="product-card">
+          <img src="../photos/Probiotic-capsules.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Probiotic Capsules 15g</h3>
+            <p>Probiotic Capsules support gut health.</p>
+            <p class="price">Rs 660.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 16 -->
+        <div class="product-card">
+          <img src="../photos/DiclofenacGel.webp" alt="Aconécar Gel" />
+          <div class="product-info">
+            <h3>Arthritis Relief Disclofenac Sodium Gel 1% 150g</h3>
+            <p>
+              Diclofenac Sodium Gel relieves arthritis pain and inflammation.
+            </p>
+            <p class="price">Rs 770.00</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
