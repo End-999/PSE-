@@ -31,7 +31,7 @@
       }
       h1 {
         text-align: center;
-        color: #5ec576;
+        color: #2f4f4f;
         margin-bottom: 30px;
       }
       .product-grid {
@@ -66,7 +66,7 @@
       .product-card h3 {
         font-size: 18px;
         margin: 0 0 10px;
-        color: #4bbb7d;
+        color: #2f4f4f;
       }
       .product-card p {
         font-size: 14px;
@@ -95,29 +95,26 @@
       }
     </style>
     <link rel="stylesheet" href="header.css" />
+    <script defer src="market.js"></script>
   </head>
   <body>
     <div class="amazon-header">
       <div class="amazon-header-left-section">
-        <a href="../pharmacy/Pharmacy.html" class="header-link">
+        <a href="../afterlogin/Pharmacy.html" class="header-link">
           <img class="amazon-logo" src="../photos/PHARMA (1).png" />
         </a>
       </div>
-
       <div class="amazon-header-middle-section">
         <input class="search-bar" type="text" placeholder="Search" />
-
         <button class="search-button">
           <img class="search-icon" src="../photos/search-icon.png" />
         </button>
       </div>
-
       <div class="amazon-header-right-section">
         <a class="orders-link header-link" href="../orders/orders.html">
           <span class="returns-text">Returns</span>
           <span class="orders-text">& Orders</span>
         </a>
-
         <a class="cart-link header-link" href="../checkout/checkout.html">
           <img class="cart-icon" src="../photos/cart-icon.png" />
           <div class="cart-quantity js-cart-quantity">0</div>
@@ -139,171 +136,180 @@
             <h3>Humeda Rich Moisturizing Creme - 200g</h3>
             <p>Deeply nourishes and hydrates dry skin.</p>
             <p class="price">Rs 885.00</p>
-            <button>Add to Cart</button>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
         <div class="product-card">
-          <img src="../photos/sunscreenGel.png" alt="LA Shield Sunscreen" />
+          <img src="../photos/sunscreenGel.png" alt="Nivea Soap Bar" />
           <div class="product-info">
-            <h3>LA Shield Fisico Matte Sunscreen Gel - 50g</h3>
-            <p>Provides matte finish and sun protection.</p>
-            <p class="price">Rs 1,200.00</p>
-            <button>Add to Cart</button>
+            <h3>Nivea Soap Bar - 100g</h3>
+            <p>Gently cleanses and moisturizes your skin.</p>
+            <p class="price">Rs 250.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
         <div class="product-card">
-          <img src="../photos/GTE.png" alt="GTN Spray" />
+          <img src="../photos/GTE.png" alt="Neutrogena Milk Cleanser" />
           <div class="product-info">
-            <h3>GTN Spray - 147ml</h3>
-            <p>Effective spray for quick relief.</p>
-            <p class="price">Rs 480.00</p>
-            <button>Add to Cart</button>
+            <h3>Neutrogena Milk Cleanser - 150ml</h3>
+            <p>Removes makeup and deeply cleanses the skin.</p>
+            <p class="price">Rs 650.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
         <div class="product-card">
-          <img src="../photos/melasmaCream.webp" alt="Melover Melasma Cream" />
+          <img
+            src="../photos/melasmaCream.webp"
+            alt="Garnier Sunscreen SPF 50"
+          />
           <div class="product-info">
-            <h3>Melover Melasma Cream - 20g</h3>
-            <p>Reduces dark spots and melasma.</p>
-            <p class="price">Rs 960.00</p>
-            <button>Add to Cart</button>
+            <h3>Garnier Sunscreen SPF 50</h3>
+            <p>Protects against UV damage and sunburn.</p>
+            <p class="price">Rs 450.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
         <div class="product-card">
           <img
             src="../photos/NourishingHairOil .webp"
-            alt="Mamaearth Hair Oil"
+            alt="Himalaya Face Wash"
           />
           <div class="product-info">
-            <h3>Mamaearth Nourishing Hair Oil for Babies - 200ml</h3>
-            <p>Gentle and nourishing oil for baby hair.</p>
-            <p class="price">Rs 638.00</p>
-            <button>Add to Cart</button>
+            <h3>Himalaya Face Wash - 100ml</h3>
+            <p>Deeply cleanses and refreshes your face.</p>
+            <p class="price">Rs 350.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
         <div class="product-card">
           <img
             src="../photos/FlamingoDiaper.webp"
-            alt="Flamingo Adult Diaper"
+            alt="Pond's Face Cream - 50g"
           />
           <div class="product-info">
-            <h3>Flamingo Adult Diaper (Unisex) - Large</h3>
-            <p>Comfortable and absorbent adult diapers.</p>
-            <p class="price">Rs 630.00</p>
-            <button>Add to Cart</button>
+            <h3>Pond's Face Cream - 50g</h3>
+            <p>Moisturizes and brightens the skin.</p>
+            <p class="price">Rs 300.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
         <div class="product-card">
-          <img src="../photos/Eylon.webp" alt="Eylon 400 Mg" />
+          <img src="../photos/Eylon.webp" alt="Dabur Amla Hair Oil" />
           <div class="product-info">
-            <h3>Eylon 400 Mg</h3>
-            <p>Effective medication for specific conditions.</p>
-            <p class="price">Rs 65.00</p>
-            <button>Add to Cart</button>
+            <h3>Dabur Amla Hair Oil - 200ml</h3>
+            <p>Strengthens and nourishes your hair.</p>
+            <p class="price">Rs 150.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
         <div class="product-card">
-          <img src="../photos/DarkSerum.webp" alt="AXIS-Y Serum" />
+          <img src="../photos/DarkSerum.webp" alt="Pantene Conditioner" />
           <div class="product-info">
-            <h3>AXIS-Y Dark Spot Correcting Glow Serum - 50ml</h3>
-            <p>Brightens skin and reduces dark spots.</p>
-            <p class="price">Rs 2,100.00</p>
-            <button>Add to Cart</button>
+            <h3>Pantene Conditioner - 150ml</h3>
+            <p>Repairs and nourishes damaged hair.</p>
+            <p class="price">Rs 380.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
-
-        <!-- Product 9 -->
         <div class="product-card">
-          <img src="../photos/AconécarGel.webp" alt="Aconécar Gel" />
+          <img
+            src="../photos/AconécarGel.webp"
+            alt="Head & Shoulders Shampoo"
+          />
           <div class="product-info">
-            <h3>Aconécar Gel (Brinton) - 15g</h3>
-            <p>Advanced gel to reduce acne scars.</p>
-            <p class="price">Rs 1,192.00</p>
-            <button>Add to Cart</button>
+            <h3>Head & Shoulders Shampoo - 250ml</h3>
+            <p>Eliminates dandruff and nourishes hair.</p>
+            <p class="price">Rs 500.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
-
-        <!-- Product 10 -->
         <div class="product-card">
-          <img src="../photos/inhaler.webp" alt="Aconécar Gel" />
+          <img
+            src="../photos/inhaler.webp"
+            alt="Colgate Whitening Toothpaste"
+          />
           <div class="product-info">
-            <h3>Albuterol Sulfate Inhalation Areosol 90 mcg</h3>
-            <p>Albuterol Sulfate 90 mcg eases breathing in asthma and COPD.</p>
-            <p class="price">Rs 999.00</p>
-            <button>Add to Cart</button>
+            <h3>Colgate Whitening Toothpaste - 100g</h3>
+            <p>Whitens teeth and removes plaque.</p>
+            <p class="price">Rs 100.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
-
-        <!-- Product 11 -->
         <div class="product-card">
-          <img src="../photos/antifungalcream.webp" alt="Aconécar Gel" />
+          <img
+            src="../photos/antifungalcream.webp"
+            alt="Ariel Detergent Powder"
+          />
           <div class="product-info">
-            <h3>Antifungal Cream 2% Miconazole Nitrate</h3>
-            <p>Miconazole 2% treats fungal infections.</p>
-            <p class="price">Rs 550.00</p>
-            <button>Add to Cart</button>
+            <h3>Ariel Detergent Powder - 1kg</h3>
+            <p>Cleans and brightens your laundry.</p>
+            <p class="price">Rs 280.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
-
-        <!-- Product 12 -->
         <div class="product-card">
-          <img src="../photos/Salbutamol-Inhaler.webp" alt="Aconécar Gel" />
+          <img
+            src="../photos/Salbutamol-Inhaler.webp"
+            alt="Dettol Antiseptic Liquid"
+          />
           <div class="product-info">
-            <h3>Salamol CFC</h3>
-            <p>Salamol CFC treats asthma.</p>
-            <p class="price">Rs 1500.00</p>
-            <button>Add to Cart</button>
+            <h3>Dettol Antiseptic Liquid - 500ml</h3>
+            <p>Protects against germs and infections.</p>
+            <p class="price">Rs 120.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
-
-        <!-- Product 13 -->
         <div class="product-card">
-          <img src="../photos/microsoftteams.webp" alt="Aconécar Gel" />
+          <img
+            src="../photos/microsoftteams.webp"
+            alt="Kleenex Facial Tissues"
+          />
           <div class="product-info">
-            <h3>Savlon Scar Prevention Gel- 50g</h3>
-            <p>Savlon Gel prevents scars..</p>
-            <p class="price">Rs 1,110.00</p>
-            <button>Add to Cart</button>
+            <h3>Kleenex Facial Tissues - 100pcs</h3>
+            <p>Soft and gentle for your face.</p>
+            <p class="price">Rs 85.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
-
-        <!-- Product 14 -->
         <div class="product-card">
-          <img src="../photos/polycrol.webp" alt="Aconécar Gel" />
+          <img src="../photos/polycrol.webp" alt="Band-Aid Bandages" />
           <div class="product-info">
-            <h3>Anatacide Antigas Gel</h3>
-            <p>
-              Anatacide Antigas Gel relieves gas, bloating, and indigestion.
-            </p>
-            <p class="price">Rs 550.00</p>
-            <button>Add to Cart</button>
+            <h3>Band-Aid Bandages - 20pcs</h3>
+            <p>Adhesive bandages for wound care.</p>
+            <p class="price">Rs 70.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
-
-        <!-- Product 15 -->
         <div class="product-card">
-          <img src="../photos/Probiotic-capsules.webp" alt="Aconécar Gel" />
+          <img
+            src="../photos/Probiotic-capsules.webp"
+            alt="Benadryl Cough Syrup"
+          />
           <div class="product-info">
-            <h3>Probiotic Capsules 15g</h3>
-            <p>Probiotic Capsules support gut health.</p>
-            <p class="price">Rs 660.00</p>
-            <button>Add to Cart</button>
-          </div>
-        </div>
-
-        <!-- Product 16 -->
-        <div class="product-card">
-          <img src="../photos/DiclofenacGel.webp" alt="Aconécar Gel" />
-          <div class="product-info">
-            <h3>Arthritis Relief Disclofenac Sodium Gel 1% 150g</h3>
-            <p>
-              Diclofenac Sodium Gel relieves arthritis pain and inflammation.
-            </p>
-            <p class="price">Rs 770.00</p>
-            <button>Add to Cart</button>
+            <h3>Benadryl Cough Syrup - 100ml</h3>
+            <p>Relieves cough and cold symptoms.</p>
+            <p class="price">Rs 160.00</p>
+            <span class="added"></span>
+            <button class="cart-js">Add to Cart</button>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="market.js"></script>
   </body>
 </html>

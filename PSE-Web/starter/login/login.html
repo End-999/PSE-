@@ -8,7 +8,6 @@
       type="image/png"
       href="../photos/PHARMA_small.png"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -19,17 +18,20 @@
 
   <body>
     <div class="container" id="container">
+      <!-- Sign Up Form -->
       <div class="form-container sign-up">
         <form>
           <h1>Create Account</h1>
-
           <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button class="redirect">Sign Up</button>
-
-          <span>or registeration with social meadia platfrom</span>
-
+          <input type="email" class="signUp-check-email" placeholder="Email" />
+          <input
+            type="password"
+            class="signUp-check-password"
+            placeholder="Password"
+          />
+          <span class="error-signUp"></span>
+          <button class="redirect signUp">Sign Up</button>
+          <span>or register with social media platform</span>
           <div class="social-icons">
             <a href="#" class="icon"
               ><i class="fa-brands fa-google-plus-g"></i
@@ -38,17 +40,17 @@
           </div>
         </form>
       </div>
+
+      <!-- Sign In Form -->
       <div class="form-container sign-in">
         <form>
           <h1>Sign In</h1>
-
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="email" class="e-value" placeholder="Email" />
+          <input type="password" class="p-value" placeholder="Password" />
+          <span class="error-signIn"></span>
           <a href="#">Forget Your Password?</a>
-          <button class="redirect">Sign In</button>
-
+          <button class="redirect signIn">Sign In</button>
           <span>or use other platform</span>
-
           <div class="social-icons">
             <a href="#" class="icon"
               ><i class="fa-brands fa-google-plus-g"></i
@@ -57,6 +59,8 @@
           </div>
         </form>
       </div>
+
+      <!-- Toggle Container -->
       <div class="toggle-container">
         <div class="toggle">
           <div class="toggle-panel toggle-left">

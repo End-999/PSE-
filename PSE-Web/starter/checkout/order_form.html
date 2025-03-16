@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Order Form</title>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #5ec576;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 16px;
+        margin-bottom: 8px;
+        display: block;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 8px;
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 12px;
+        background-color: #5ec576;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .btn-submit:hover {
+        background-color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order Form</h1>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Payment Method</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cod">Cash on Delivery</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="specialInstructions"
+            >Special Instructions (Optional)</label
+          >
+          <textarea
+            id="specialInstructions"
+            name="specialInstructions"
+            rows="4"
+          ></textarea>
+        </div>
+        <span class="error-msg"></span>
+
+        <button type="submit" class="btn-submit">Submit Order</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById('orderForm')
+        .addEventListener('submit', function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Get the form data
+          const fullName = document.getElementById('fullName').value;
+          const address = document.getElementById('address').value;
+          const phone = document.getElementById('phone').value;
+          const paymentMethod = document.getElementById('paymentMethod').value;
+          const specialInstructions = document.getElementById(
+            'specialInstructions'
+          ).value;
+
+          const clickBtn = document.querySelector('.btn-submit');
+          const err = document.querySelector('.error-msg');
+
+          clickBtn.addEventListener('click', () => {
+            if (
+              fullName === '' ||
+              address === '' ||
+              phone === '' ||
+              paymentMethod === ''
+            ) {
+              err.innerHTML = error;
+            } else {
+              location.href = '../orders/orders.html';
+            }
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -151,3 +151,9 @@
   width: 26px;
   text-align: center;
 }
+
+.added {
+  color: #32994ae5;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
