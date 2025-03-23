@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="photos/PHARMA_small.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pharmacy/pharmcy.css" />
+    <title>Pharma Switf | Fast Medicine Delivery in Nepal</title>
+
+    <script defer src="pharmacy/Pharmacy.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="photos/PHARMA (1).png"
+          alt="Pharma Switf logo"
+          class="nav__logo"
+          id="logo"
+          designer="Pharma Switf"
+          data-version-number="1.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">How It Works</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Fast,
+          <!-- Highlight effect -->
+          <span class="highlight">Reliable</span>
+          Health<br />
+          <span class="highlight">in Nepal</span>
+        </h1>
+        <h4>
+          Get your medicines delivered to your doorstep <br />
+          with just a few clicks.
+        </h4>
+        <button class="btn--text btn--scroll-to">Buy now &RightArrow;</button>
+        <img
+          src="photos/1.png"
+          class="header__img"
+          alt="Pharmacist delivering medicine"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need for fast, reliable medicine delivery.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="photos/2 (1).png"
+          data-src="photos/2 (1).png"
+          alt="Medicine delivery"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-truck"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Fast & Reliable Delivery</h5>
+          <p>
+            Get your medicines delivered in as little as 2 hours with our urgent
+            delivery option.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-shield"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Secure Prescription Handling</h5>
+          <p>
+            Securely upload and validate prescriptions with our pharmacy
+            partners.
+          </p>
+        </div>
+        <img
+          src="photos/3 (1).png"
+          data-src="photos/3 (1).png"
+          alt="Temperature-controlled delivery"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="photos/6 (1).png"
+          data-src="photos/6 (1).png"
+          alt="Medicine packaging"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-package"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Temperature-Controlled Packaging</h5>
+          <p>
+            Sensitive medicines are delivered safely with temperature-controlled
+            packaging.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">How It Works</h2>
+        <h3 class="section__header">
+          Simple steps to get your medicines delivered.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Upload Prescription
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Select Pharmacy
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Track Delivery
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Upload your prescription securely.</h5>
+          <p>
+            Scan or upload your prescription, and our system will validate it
+            with licensed pharmacies.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Choose from verified local pharmacies.
+          </h5>
+          <p>Select a pharmacy near you with the required medicine in stock.</p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-map"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Track your delivery in real-time.</h5>
+          <p>
+            Follow your order with GPS tracking and receive updates on delivery
+            status.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Thousands of patients trust Pharma Switf for their medicine needs.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">A lifesaver during emergencies!</h5>
+            <blockquote class="testimonial__text">
+              I had an asthma attack late at night, and Pharma Switf delivered
+              my inhaler within an hour. Truly a lifesaver!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Shrestha</h6>
+              <p class="testimonial__location">Kathmandu, Nepal</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Never miss a dose again!</h5>
+            <blockquote class="testimonial__text">
+              As a diabetic patient, I rely on Pharma Switf for timely insulin
+              deliveries. Their service is reliable and fast.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Maya Gurung</h6>
+              <p class="testimonial__location">Pokhara, Nepal</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Finally, a reliable medicine delivery service!
+            </h5>
+            <blockquote class="testimonial__text">
+              Pharma Switf has made it so easy to get my medicines delivered.
+              The temperature-controlled packaging is a great feature for
+              sensitive medicines.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Rajesh Thapa</h6>
+              <p class="testimonial__location">Bhaktapur, Nepal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best time to join Pharma Switf is today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Get Started now!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a
+            class="footer__link about-us"
+            href="#"
+            onclick="window.location.href = '../starter/aboutus.html';"
+            ;
+            return
+            false;
+            >About</a
+          >
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="photos/PHARMA (1).png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a class="footer__link" target="_blank" href="#">Pharma Switf</a>. All
+        rights reserved.
+      </p>
+    </footer>
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>
+
+<!-- Product 9 -->
+<!-- <div class="product-card">
+  <img src="photos/AconécarGel.webp" alt="Aconécar Gel" />
+  <div class="product-info">
+    <h3>Aconécar Gel (Brinton) - 15g</h3>
+    <p>Advanced gel to reduce acne scars.</p>
+    <p class="price">Rs 1,192.00</p>
+    <button>Add to Cart</button>
+  </div>
+</div> -->
